@@ -1,0 +1,107 @@
+import { 
+  Briefcase, 
+  Calendar, 
+  MapPin, 
+  Building2, 
+  CheckCircle2, 
+  TrendingUp, 
+  Layers, 
+  Code2, 
+  Sparkles 
+} from 'lucide-react';
+import { experiences } from '../data/cvData';
+
+export default function Experience() {
+  const getExperienceIcon = (id) => {
+    switch(id) {
+      case 'medianet':
+        return Layers;
+      case 'bte':
+        return TrendingUp;
+      case 'sadim-stage':
+        return Code2;
+      default:
+        return Briefcase;
+    }
+  };
+
+  return (
+    <section id="experience" className="section-padding experience-section">
+      <div className="section-container">
+        <div className="section-header text-center">
+          <div className="section-badge">
+            <Briefcase size={14} className="mr-1 text-cyan" />
+            <span>Parcours Professionnel</span>
+          </div>
+          <h2 className="section-title">
+            Expériences <span className="gradient-text">Professionnelles</span>
+          </h2>
+          <p className="section-subtitle">
+            Un cheminement alliant stages spécialisés en BI/Backend, contrôle de gestion bancaire et développement web.
+          </p>
+        </div>
+
+        {/* Timeline wrapper */}
+        <div className="timeline-container">
+          <div className="timeline-track"></div>
+
+          {experiences.map((exp, idx) => {
+            const Icon = getExperienceIcon(exp.id);
+            const isEven = idx % 2 === 0;
+
+            return (
+              <div key={exp.id} className={`timeline-item ${isEven ? 'timeline-left' : 'timeline-right'}`}>
+                {/* Timeline node */}
+                <div className="timeline-node">
+                  <Icon size={18} />
+                </div>
+
+                {/* Timeline content card */}
+                <div className="timeline-card">
+                  <div className="timeline-card-header">
+                    <div className="company-badge-wrap">
+                      <span className="experience-type-pill">{exp.type}</span>
+                      <span className="experience-badge">{exp.badge}</span>
+                    </div>
+                    <div className="timeline-period">
+                      <Calendar size={14} className="mr-1 text-cyan" />
+                      <span>{exp.period}</span>
+                    </div>
+                  </div>
+
+                  <h3 className="timeline-role">{exp.role}</h3>
+                  <div className="timeline-company">
+                    <Building2 size={16} className="text-accent" />
+                    <span>{exp.company}</span>
+                  </div>
+
+                  <p className="timeline-desc">{exp.description}</p>
+
+                  <div className="timeline-achievements">
+                    <h4 className="achievements-heading">Réalisations majeures :</h4>
+                    <ul className="achievements-list">
+                      {exp.achievements.map((ach, aIdx) => (
+                        <li key={aIdx} className="achievement-item">
+                          <CheckCircle2 size={16} className="achievement-icon text-emerald" />
+                          <span>{ach}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Tech stack pills */}
+                  <div className="timeline-tech-stack">
+                    {exp.technologies.map((tech, tIdx) => (
+                      <span key={tIdx} className="tech-badge">{tech}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
