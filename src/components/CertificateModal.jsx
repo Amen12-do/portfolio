@@ -153,6 +153,16 @@ export default function CertificateModal({ certificate, allCertificates, onClose
                 src={certificate.image} 
                 alt={certificate.title} 
                 className="cert-modal-img"
+                onError={(e) => {
+                  const file = certificate.image.split('/').pop();
+                  if (!e.currentTarget.dataset.retried) {
+                    e.currentTarget.dataset.retried = '1';
+                    e.currentTarget.src = `/portfolio/certificates/${file}`;
+                  } else if (e.currentTarget.dataset.retried === '1') {
+                    e.currentTarget.dataset.retried = '2';
+                    e.currentTarget.src = `./certificates/${file}`;
+                  }
+                }}
               />
             </div>
           </div>

@@ -195,6 +195,14 @@ export const education = [
   }
 ];
 
+export const getAssetPath = (path) => {
+  if (!path) return '';
+  if (path.startsWith('http://') || path.startsWith('https://')) return path;
+  const clean = path.replace(/^\/+/, '');
+  const base = import.meta.env.BASE_URL || '/';
+  return base.endsWith('/') ? `${base}${clean}` : `${base}/${clean}`;
+};
+
 export const certifications = [
   {
     id: "ga-beginners",
@@ -203,7 +211,7 @@ export const certifications = [
     issuer: "Google Analytics Academy",
     recipient: "daaji ayman",
     tag: "Analytics & Tracking",
-    image: "/certificates/google-analytics-beginners.png",
+    image: getAssetPath("certificates/google-analytics-beginners.png"),
     validity: "Valide jusqu'au 18 mars 2025",
     description: "Formation certifiante Google Analytics Academy sur la collecte de données, la création de vues et l'analyse de trafic web."
   },
@@ -214,7 +222,7 @@ export const certifications = [
     issuer: "Google Analytics Academy",
     recipient: "daaji ayman",
     tag: "Visualisation & Reporting",
-    image: "/certificates/intro-data-studio.png",
+    image: getAssetPath("certificates/intro-data-studio.png"),
     validity: "Valide jusqu'au 16 mars 2025",
     description: "Conception de rapports dynamiques, connexion aux sources de données et création de tableaux de bord interactifs sur Looker Studio."
   },
@@ -225,7 +233,7 @@ export const certifications = [
     issuer: "IBM (offert via Coursera)",
     recipient: "Aymen Daaji",
     tag: "Agilité & Méthodes",
-    image: "/certificates/quality-work-with-agility.png",
+    image: getAssetPath("certificates/quality-work-with-agility.png"),
     issueDate: "6 août 2026",
     credentialId: "LC8RU4HXT2B2",
     verifyUrl: "https://coursera.org/verify/LC8RU4HXT2B2",
@@ -238,7 +246,7 @@ export const certifications = [
     issuer: "Google Digital Garage",
     recipient: "Aymen Daaji",
     tag: "Marketing & Acquisition",
-    image: "/certificates/digital-marketing-fundamentals.svg",
+    image: getAssetPath("certificates/digital-marketing-fundamentals.svg"),
     validity: "Certificat Accrédité (26 modules / 40h)",
     description: "Maîtrise des canaux d'acquisition, du référencement, de la stratégie digitale et de l'analyse d'audience pour optimiser la présence en ligne."
   },
@@ -249,7 +257,7 @@ export const certifications = [
     issuer: "Google Analytics Academy",
     recipient: "daaji ayman",
     tag: "Analytics Avancé",
-    image: "/certificates/google-analytics-power-users.png",
+    image: getAssetPath("certificates/google-analytics-power-users.png"),
     validity: "Valide jusqu'au 21 décembre 2025",
     description: "Techniques avancées d'analyse de cohortes, tunnels de conversion, dimensions personnalisées et optimisation du ROI."
   },
@@ -260,7 +268,7 @@ export const certifications = [
     issuer: "Google Analytics Academy",
     recipient: "daaji ayman",
     tag: "Data Strategy & Tracking",
-    image: "/certificates/advanced-google-analytics.png",
+    image: getAssetPath("certificates/advanced-google-analytics.png"),
     validity: "Valide jusqu'au 29 décembre 2025",
     description: "Collecte avancée, segmentation stratégique, protocoles de mesure et configuration fine des indicateurs analytiques."
   }
