@@ -242,13 +242,15 @@ export const certifications = [
   {
     id: "marketing-digital",
     title: "Les principes fondamentaux du marketing numérique",
-    officialTitle: "The Fundamentals of Digital Marketing",
-    issuer: "Google Digital Garage",
-    recipient: "Aymen Daaji",
+    officialTitle: "Fondamentaux du marketing numérique",
+    issuer: "Google Ateliers Numériques",
+    recipient: "daaji ayman",
     tag: "Marketing & Acquisition",
-    image: getAssetPath("certificates/digital-marketing-fundamentals.svg"),
-    validity: "Certificat Accrédité (26 modules / 40h)",
-    description: "Maîtrise des canaux d'acquisition, du référencement, de la stratégie digitale et de l'analyse d'audience pour optimiser la présence en ligne."
+    image: getAssetPath("certificates/digital-marketing-fundamentals.png"),
+    issueDate: "20 décembre 2021",
+    credentialId: "BUQ A7M NLZ",
+    verifyUrl: "https://learndigital.withgoogle.com/link/1qh2gjrod8g",
+    description: "Maîtrise des canaux d'acquisition, du référencement, de la stratégie digitale et de l'analyse d'audience accréditée par l'IAB Europe et The Open University."
   },
   {
     id: "ga-power-users",

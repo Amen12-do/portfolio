@@ -205,7 +205,7 @@ export default function CertificateModal({ certificate, allCertificates, onClose
                 className="btn btn-primary btn-sm"
               >
                 <ExternalLink size={15} />
-                <span>Vérifier sur Coursera</span>
+                <span>{certificate.verifyUrl.includes('coursera') ? 'Vérifier sur Coursera' : 'Vérifier l\'authenticité'}</span>
               </a>
             )}
             <a 
