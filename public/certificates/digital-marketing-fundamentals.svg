@@ -88,10 +88,10 @@
   <g transform="translate(90, 740)">
     <line x1="0" y1="0" x2="800" y2="0" stroke="rgba(250, 204, 21, 0.2)" stroke-width="1"/>
     <text x="0" y="32" font-family="'JetBrains Mono', monospace" font-size="14" fill="#9CA3AF">
-      Émetteur : Google Digital Garage &bull; Interactive Advertising Bureau Europe (IAB)
+      Émetteur : Google Digital Garage &#8226; Interactive Advertising Bureau Europe (IAB)
     </text>
     <text x="0" y="55" font-family="'JetBrains Mono', monospace" font-size="13" fill="url(#goldGrad)">
-      Statut : Certificat vérifié &bull; 26 modules / 40 heures d'apprentissage validés
+      Statut : Certificat vérifié &#8226; 26 modules / 40 heures d'apprentissage validés
     </text>
   </g>
 </svg>
