@@ -1,3 +1,10 @@
+import gaBeginnersImg from '../assets/certificates/google-analytics-beginners.png';
+import introDataStudioImg from '../assets/certificates/intro-data-studio.png';
+import qualityAgilityImg from '../assets/certificates/quality-work-with-agility.png';
+import marketingDigitalImg from '../assets/certificates/digital-marketing-fundamentals.png';
+import gaPowerUsersImg from '../assets/certificates/google-analytics-power-users.png';
+import gaAdvancedImg from '../assets/certificates/advanced-google-analytics.png';
+
 export const personalInfo = {
   name: "Aymen Daaji",
   title: "Data Analyst",
@@ -211,7 +218,7 @@ export const certifications = [
     issuer: "Google Analytics Academy",
     recipient: "daaji ayman",
     tag: "Analytics & Tracking",
-    image: getAssetPath("certificates/google-analytics-beginners.png"),
+    image: gaBeginnersImg,
     validity: "Valide jusqu'au 18 mars 2025",
     description: "Formation certifiante Google Analytics Academy sur la collecte de données, la création de vues et l'analyse de trafic web."
   },
@@ -222,7 +229,7 @@ export const certifications = [
     issuer: "Google Analytics Academy",
     recipient: "daaji ayman",
     tag: "Visualisation & Reporting",
-    image: getAssetPath("certificates/intro-data-studio.png"),
+    image: introDataStudioImg,
     validity: "Valide jusqu'au 16 mars 2025",
     description: "Conception de rapports dynamiques, connexion aux sources de données et création de tableaux de bord interactifs sur Looker Studio."
   },
@@ -233,7 +240,7 @@ export const certifications = [
     issuer: "IBM (offert via Coursera)",
     recipient: "Aymen Daaji",
     tag: "Agilité & Méthodes",
-    image: getAssetPath("certificates/quality-work-with-agility.png"),
+    image: qualityAgilityImg,
     issueDate: "6 août 2026",
     credentialId: "LC8RU4HXT2B2",
     verifyUrl: "https://coursera.org/verify/LC8RU4HXT2B2",
@@ -246,7 +253,7 @@ export const certifications = [
     issuer: "Google Ateliers Numériques",
     recipient: "daaji ayman",
     tag: "Marketing & Acquisition",
-    image: getAssetPath("certificates/digital-marketing-fundamentals.png"),
+    image: marketingDigitalImg,
     issueDate: "20 décembre 2021",
     credentialId: "BUQ A7M NLZ",
     verifyUrl: "https://learndigital.withgoogle.com/link/1qh2gjrod8g",
@@ -259,7 +266,7 @@ export const certifications = [
     issuer: "Google Analytics Academy",
     recipient: "daaji ayman",
     tag: "Analytics Avancé",
-    image: getAssetPath("certificates/google-analytics-power-users.png"),
+    image: gaPowerUsersImg,
     validity: "Valide jusqu'au 21 décembre 2025",
     description: "Techniques avancées d'analyse de cohortes, tunnels de conversion, dimensions personnalisées et optimisation du ROI."
   },
@@ -270,7 +277,7 @@ export const certifications = [
     issuer: "Google Analytics Academy",
     recipient: "daaji ayman",
     tag: "Data Strategy & Tracking",
-    image: getAssetPath("certificates/advanced-google-analytics.png"),
+    image: gaAdvancedImg,
     validity: "Valide jusqu'au 29 décembre 2025",
     description: "Collecte avancée, segmentation stratégique, protocoles de mesure et configuration fine des indicateurs analytiques."
   }

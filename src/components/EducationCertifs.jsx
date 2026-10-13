@@ -95,16 +95,6 @@ export default function EducationCertifs() {
                     alt={cert.title} 
                     className="cert-thumbnail-img"
                     loading="lazy"
-                    onError={(e) => {
-                      const file = cert.image.split('/').pop();
-                      if (!e.currentTarget.dataset.retried) {
-                        e.currentTarget.dataset.retried = '1';
-                        e.currentTarget.src = `/portfolio/certificates/${file}`;
-                      } else if (e.currentTarget.dataset.retried === '1') {
-                        e.currentTarget.dataset.retried = '2';
-                        e.currentTarget.src = `./certificates/${file}`;
-                      }
-                    }}
                   />
                   <div className="cert-img-overlay">
                     <div className="cert-zoom-btn">
