@@ -55,7 +55,7 @@ Conformément à la structure exacte du CV original :
    - **Google Analytics for Power Users** (Google Analytics Academy — Attestation officielle)
    - **Google Analytics for Beginners** (Google Analytics Academy — Attestation officielle)
    - **Advanced Google Analytics** (Google Analytics Academy — Attestation officielle)
-   - **Les principes fondamentaux du marketing numérique** (Google Digital Garage — Certificat vectoriel accrédité)
+   - **Fondamentaux du marketing numérique** (Google Ateliers Numériques & IAB Europe — Diplôme officiel avec ID `BUQ A7M NLZ`)
 
 7. **Langues :**
    - **Arabe** — Courant &bull; **Français** — Avancé &bull; **Anglais** — Intermédiaire &bull; **Turc** — Débutant
