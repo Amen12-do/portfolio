@@ -3,12 +3,8 @@ import {
   FolderGit2, 
   Calendar, 
   ArrowUpRight, 
-  Sparkles, 
-  Layers, 
   Code2, 
-  BarChart3, 
-  Cpu, 
-  ExternalLink 
+  BarChart3 
 } from 'lucide-react';
 import { projects } from '../data/cvData';
 import ProjectModal from './ProjectModal';
@@ -26,14 +22,14 @@ export default function Projects() {
       <div className="section-container">
         <div className="section-header text-center">
           <div className="section-badge">
-            <FolderGit2 size={14} className="mr-1 text-cyan" />
-            <span>Réalisations & Projets</span>
+            <FolderGit2 size={14} className="mr-1 text-yellow" />
+            <span>Travaux & Réalisations</span>
           </div>
           <h2 className="section-title">
-            Projets & <span className="gradient-text">Études de Cas</span>
+            Projets <span className="gradient-text">académiques</span>
           </h2>
           <p className="section-subtitle">
-            Conception de connecteurs ETL, modélisation de tableaux de bord financiers, et développement d'applications web complètes.
+            Conception de connecteurs ETL personnalisés, tableaux de bord financiers interactifs et digitalisation de plateformes web.
           </p>
         </div>
 
@@ -72,7 +68,7 @@ export default function Projects() {
                 <div className="project-header-meta">
                   <span className="project-category-tag">{proj.categoryLabel}</span>
                   <span className="project-date">
-                    <Calendar size={13} className="mr-1" />
+                    <Calendar size={13} className="mr-1 text-yellow" />
                     {proj.date}
                   </span>
                 </div>
@@ -96,10 +92,13 @@ export default function Projects() {
                 </div>
 
                 {/* Tech badges */}
-                <div className="project-tech-chips">
-                  {proj.technologies.map((tech, tIdx) => (
-                    <span key={tIdx} className="tech-chip">{tech}</span>
-                  ))}
+                <div className="project-tech-row">
+                  <span className="project-tech-label">Technologies :</span>
+                  <div className="project-tech-chips">
+                    {proj.technologies.map((tech, tIdx) => (
+                      <span key={tIdx} className="tech-chip">{tech}</span>
+                    ))}
+                  </div>
                 </div>
               </div>
 
@@ -128,4 +127,3 @@ export default function Projects() {
     </section>
   );
 }
-

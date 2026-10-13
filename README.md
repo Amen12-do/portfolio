@@ -1,126 +1,102 @@
-# Portfolio Professionnel — Aymen Daaji (React.js)
+# Portfolio Professionnel Interactif — Aymen Daaji (React.js)
 
-Portfolio moderne, interactif et responsive conçu pour **Aymen Daaji** (Data Analyst & Spécialiste Business Intelligence) basé fidèlement sur son curriculum vitae.
-
----
-
-## 🚀 Fonctionnalités Clés
-
-1. **En-tête & Navigation Fluide :**
-   - Menu responsive avec tiroir mobile (*drawer*).
-   - Bascule automatique & manuelle Thème Sombre (*Dark Mode*) / Thème Clair (*Light Mode*).
-   - Accès rapide à la consultation & impression du CV en format PDF.
-
-2. **Section Hero :**
-   - Présentation de la double compétence : **Data Analysis & BI** + **Développement Web & Backend**.
-   - Badges de contact interactifs (copie d'email en un clic, appel téléphonique direct, lien LinkedIn).
-   - Indicateurs d'impact chiffrés :
-     - **-40%** de temps de traitement ETL (Medianet)
-     - **20+** KPIs financiers et prévisionnels pilotés (BTE)
-     - **Mastère Pro** Contrôle de Gestion & Business Intelligence (ESEN / ISCAE)
-
-3. **Section "À propos" & Double Compétence :**
-   - Mise en avant du profil hybride finance/gestion & développement informatique.
-   - Les 4 piliers d'expertise : Business Intelligence, Flux ETL, Contrôle de Gestion & Développement d'APIs.
-
-4. **Laboratoire Décisionnel & Showcase BI Interactif :**
-   - **Démo Pilotage Financier (BTE) :** bascule des périodes (T1, T2, T3, Cumul), KPIs dynamiques, mesures DAX et graphique comparatif Réalisé vs Prévisionnel.
-   - **Démo Optimisation ETL (Medianet) :** simulation interactive de la réduction de 40% du temps d'exécution (55 min vs 33 min) avec schéma d'architecture des flux.
-   - **Démo Connecteur Redmine :** suivi de la volumétrie des tickets, taux de résolution et indicateurs MTTR.
-
-5. **Expériences Professionnelles (Timeline Interactive) :**
-   - **Medianet** (Fév 2025 – Juin 2025) : Stagiaire BI & Backend (ETL, API REST, -40% temps de traitement).
-   - **Banque de Tunisie et des Emirats - BTE** (Juil 2024 – Sept 2024) : Stagiaire Contrôle de Gestion (20+ KPIs, rapports financiers, analyse des écarts).
-   - **SADIM industrielle** (Mars 2023 – Juin 2023) : Stagiaire Développement Web (Plateforme e-commerce React.js/Node.js, catalogue, identité visuelle).
-
-6. **Projets & Études de Cas (avec fenêtres modales détaillées) :**
-   - Filtrage par catégorie : *Tous*, *Business Intelligence & ETL*, *Développement Web*.
-   - **Connecteur REDMINE multi-canaux & BI** (Flask, Python, MySQL, SSMS, Power BI).
-   - **Dashboard BI Finance** (Power BI, Power Query, DAX, MySQL, SSMS).
-   - **Digitalisation des ventes SADIM - PFE** (React.js, Node.js, Express.js, GitHub, Illustrator).
-   - **Plateforme de Quiz & Tests** (PHP, MySQL, HTML/CSS).
-   - Modale d'architecture technique détaillant la démarche et la valeur métier de chaque projet.
-
-7. **Compétences & Stack :**
-   - Jauges de maîtrise pour la BI (Power BI, SSIS, SQL Server, MySQL, PL/SQL, Excel).
-   - Développement (Python, Flask, React.js, Node.js, Express, JavaScript).
-   - Méthodologies (Agile/Scrum, GIMSI, Modélisation dimensionnelle).
-   - Outils & Design (GitHub, SSMS, SSMA, Android Studio, Illustrator, Photoshop).
-
-8. **Formation, Certifications & Langues :**
-   - Mastère Pro Contrôle de Gestion & BI (ESEN & ISCAE Manouba).
-   - Licence Business Computing (ESEN).
-   - Baccalauréat Économie & Gestion.
-   - Certifications Google Analytics, Looker Studio, Agilité et Marketing Numérique.
-   - Jauges de langues : Arabe (Courant), Français (Avancé), Anglais (Intermédiaire), Turc (Débutant).
-
-9. **Bénévolat & Vie Associative :**
-   - Enactus ESEN, Team Cloud ESCT, Hult Prize ESEN, Global Game Jam 2020.
-
-10. **Module de Contact & CV Imprimable :**
-    - Coordonnées directes cliquables avec retour visuel de copie dans le presse-papiers.
-    - Formulaire de message interactif.
-    - **Visualiseur de CV complet avec mode impression haute fidélité** (`@media print` optimisé pour enregistrement direct en PDF).
+Portfolio moderne, interactif et responsive conçu pour **Aymen Daaji** (**Data Analyst**), développé en **React.js + Vite**, respectant fidèlement l'intégralité des sections, titres et informations de son curriculum vitae, avec une identité visuelle premium en **Noir et Jaune** (Yellow & Black) et une galerie interactive de **certificats avec images haute définition**.
 
 ---
 
-## 🛠️ Stack Technique
+## 🎨 Charte Graphique : Thème Noir & Jaune (Yellow & Black)
 
-- **Framework :** React 19 + Vite 8
-- **Icônes :** Lucide React + Icônes SVG personnalisées
-- **Styles :** CSS3 Moderne (Custom Properties, Glassmorphism, Flexbox, CSS Grid, Media Queries d'impression)
-- **Typographie :** Google Fonts (Plus Jakarta Sans & JetBrains Mono)
+- **Fonds & Surfaces :** Noir profond absolu (`#07070A`), noir anthracite (`#0F1016`) et carbone sombre (`#161722`).
+- **Accents Principaux :** Jaune cyber électrique (`#FACC15`), or pur (`#FFD700`) et ambre doré (`#F59E0B`).
+- **Couleurs Compatibles Harmoniques :**
+  - **Orange ambré (`#FB923C`)** : assorti aux rubans des attestations Google Analytics.
+  - **Émeraude (`#10B981`)** : indicateurs de performance, validations et statuts certifiés.
+  - **Bleu doux (`#38BDF8`)** : touches technologiques et réseau LinkedIn.
+  - **Blanc pur (`#FFFFFF`) & Zinc doux (`#A1A1AA`)** : contraste et lisibilité typographique optimale.
+- **Effets Visuels :** Halo doré néon (*glow*), reflets dorés au survol, cartes vitrées sombres (*dark glassmorphism*).
 
 ---
 
-## 💻 Démarrage Rapide
+## 📑 Titres du CV Strictement Préservés
 
-Dans le répertoire `c:\redmine\portfelio` :
+Conformément à la structure exacte du CV original :
 
-### Lancer le serveur de développement :
+1. **En-tête & Profil :**
+   - Nom : **Aymen Daaji**
+   - Titre officiel : **Data Analyst**
+   - Coordonnées : Ariana, Tunisie • `aymandaaji@gmail.com` • `92 730 383` / `50 346 890` • `linkedin.com/in/ayman-daaji`
+   - Résumé professionnel officiel intégral.
+
+2. **Expérience professionnelle :**
+   - **Stagiaire BI & Développement Backend, Medianet** (février 2025 – juin 2025)
+   - **Stagiaire Contrôle de Gestion, Banque de Tunisie et des Emirats (BTE)** (juillet 2024 – septembre 2024)
+   - **Stagiaire Développement Web, SADIM industrielle** (mars 2023 – juin 2023)
+
+3. **Projets académiques :**
+   - **Conception et déploiement d’un connecteur REDMINE avec multiples canaux et BI** (juin 2025)
+   - **Dashboard BI, Finance** (octobre 2024)
+   - **La digitalisation des ventes pour l'entreprise SADIM, Projet fin d'étude (PFE)** (juin 2023)
+   - **Test (projet fin d'année), site de test quiz** (mai 2022)
+
+4. **Formation :**
+   - **Mastère professionnel en Contrôle de Gestion et Business Intelligence**, ESEN et ISCAE Manouba (2023 – 2025)
+   - **Licence en business computing**, École supérieur d'économie numérique (ESEN) (2019 – 2023)
+   - **Baccalauréat (économie et gestion)**, Lycée privé Asdrubal Bardo (2019)
+
+5. **Compétences :**
+   - **Business Intelligence & Data** : ETL (SSIS, Power Query, Dataflows), Bases de données (SQL Server, MySQL Workbenches, MySQL, PL/SQL), Reporting & Visualisation (Power BI, Excel).
+   - **Développement et scripts** : Python (Pandas, NumPy, Flask), JavaScript, HTML, CSS, React.js, Node.js, Express.js.
+   - **Méthodologies & Gestion de projets** : Agile (Scrum), GIMSI, Analyse et modélisation des données, Automatisation et optimisation des processus.
+   - **Outils & Environnements** : GitHub, Android Studio, Adobe Illustrator, Photoshop.
+
+6. **Certifications & Images Officielles :**
+   - **Quality Work with Agility** (IBM Coursera — Diplôme officiel avec ID `LC8RU4HXT2B2` et lien de vérification Coursera)
+   - **Introduction to Data Studio** (Google Analytics Academy — Attestation officielle)
+   - **Google Analytics for Power Users** (Google Analytics Academy — Attestation officielle)
+   - **Google Analytics for Beginners** (Google Analytics Academy — Attestation officielle)
+   - **Advanced Google Analytics** (Google Analytics Academy — Attestation officielle)
+   - **Les principes fondamentaux du marketing numérique** (Google Digital Garage — Certificat vectoriel accrédité)
+
+7. **Langues :**
+   - **Arabe** — Courant &bull; **Français** — Avancé &bull; **Anglais** — Intermédiaire &bull; **Turc** — Débutant
+
+8. **Bénévolat :**
+   - **Enactus ESEN**, membre de departement marketing (2022)
+   - **Team cloud ESCT**, Animateur d'emission Tecloud (2021)
+   - **Hult prize ESEN**, sponsoring et logistique (2020)
+   - **Indie Games Association Globale Game Jam 2020 (ISAMM)**, membre organisateur (2020)
+
+---
+
+## 🔍 Visionneuse Interactive de Certificats (Lightbox Modal)
+
+- **Aperçu miniature :** Chaque carte de certification affiche l'image authentique avec badge de l'émetteur et statut certifié.
+- **Modale plein écran :** En cliquant sur un certificat, une fenêtre modale s'ouvre avec :
+  - L'image haute résolution du diplôme.
+  - Commandes de zoom interactif (zoom avant, zoom arrière, réinitialisation à 100%).
+  - Navigation directe entre les certificats (touches fléchées clavier ou boutons Précédent / Suivant).
+  - Bouton de téléchargement et d'affichage en taille réelle.
+  - Lien officiel de vérification en ligne (ex: Coursera).
+
+---
+
+## 💻 Démarrage et Utilisation
+
+Dans le dossier `c:\redmine\portfelio` :
+
+### 1. Lancer le serveur de développement :
 ```powershell
 npm run dev
 ```
+Le portfolio sera accessible sur `http://localhost:5173/`.
 
-### Compiler pour la production :
+### 2. Compiler pour la production :
 ```powershell
 npm run build
 ```
 
-### Prévisualiser la version de production :
+### 3. Prévisualiser le build de production :
 ```powershell
 npm run preview
 ```
-Le serveur local est accessible sur `http://localhost:4173/`.
-
----
-
-## 📁 Structure du Projet
-
-```text
-portfelio/
-├── index.html              # Fichier HTML principal avec métadonnées SEO & OpenGraph
-├── package.json            # Dépendances et scripts
-├── src/
-│   ├── main.jsx            # Point d'entrée React
-│   ├── App.jsx             # Composant racine orchestrant les sections
-│   ├── App.css             # Feuilles de styles de l'ensemble des composants
-│   ├── index.css           # Système de design, variables CSS (thèmes clair/sombre)
-│   ├── data/
-│   │   └── cvData.js       # Données structurées extraites du CV d'Aymen Daaji
-│   └── components/
-│       ├── Navbar.jsx          # Barre de navigation responsive & commutateur de thème
-│       ├── Hero.jsx            # En-tête percutant avec métriques et contacts
-│       ├── About.jsx           # Présentation de la double compétence Data + Dev
-│       ├── BiShowcase.jsx      # Laboratoire BI interactif (KPIs, ETL -40%, Redmine)
-│       ├── Experience.jsx      # Frise chronologique des expériences professionnelles
-│       ├── Projects.jsx        # Galerie des projets avec filtres et modales
-│       ├── ProjectModal.jsx    # Fiche d'architecture détaillée par projet
-│       ├── Skills.jsx          # Compétences classées avec jauges d'expertise
-│       ├── EducationCertifs.jsx# Diplômes, certifications Google et langues
-│       ├── Volunteering.jsx    # Engagements associatifs
-│       ├── Contact.jsx         # Coordonnées et formulaire de prise de contact
-│       ├── ResumeModal.jsx     # Fiche CV imprimable conforme au CV original
-│       ├── Footer.jsx          # Pied de page avec liens rapides et retour haut
-│       └── Icons.jsx           # Composants SVG vectoriels
-```
+Accessible sur `http://localhost:4173/`.

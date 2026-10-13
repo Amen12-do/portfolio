@@ -1,13 +1,14 @@
 import { 
   BarChart3, 
   ArrowUp, 
-  Heart, 
   Mail, 
   Phone, 
   FileDown 
 } from 'lucide-react';
 import { LinkedinIcon } from './Icons';
 import { personalInfo } from '../data/cvData';
+
+const currentYear = new Date().getFullYear();
 
 export default function Footer({ onOpenResume }) {
   const scrollToTop = () => {
@@ -27,7 +28,7 @@ export default function Footer({ onOpenResume }) {
               <span className="brand-name">{personalInfo.name}</span>
             </div>
             <p className="footer-desc">
-              Data Analyst & Ingénieur Business Intelligence avec une double compétence en modélisation décisionnelle et développement web.
+              Data Analyst diplômé en Contrôle de Gestion & Business Intelligence avec une double compétence en analyse de données et développement.
             </p>
             <div className="footer-social-links">
               <a 
@@ -58,14 +59,14 @@ export default function Footer({ onOpenResume }) {
 
           {/* Quick links */}
           <div className="footer-links-col">
-            <h4 className="footer-col-title">Navigation Rapide</h4>
+            <h4 className="footer-col-title">Titres du CV & Navigation</h4>
             <ul className="footer-nav-list">
-              <li><a href="#about">À propos & Vision</a></li>
-              <li><a href="#bi-showcase">Showcase & Démo BI</a></li>
+              <li><a href="#about">Double compétence</a></li>
               <li><a href="#experience">Expérience professionnelle</a></li>
-              <li><a href="#projects">Projets & Études de cas</a></li>
-              <li><a href="#skills">Compétences techniques</a></li>
+              <li><a href="#projects">Projets académiques</a></li>
+              <li><a href="#skills">Compétences</a></li>
               <li><a href="#education">Formation & Certifications</a></li>
+              <li><a href="#volunteering">Bénévolat</a></li>
             </ul>
           </div>
 
@@ -73,7 +74,7 @@ export default function Footer({ onOpenResume }) {
           <div className="footer-actions-col">
             <h4 className="footer-col-title">Ressources</h4>
             <p className="footer-action-text">
-              Téléchargez ou imprimez une version synthétique du CV en haute définition.
+              Consultez et imprimez la version intégrale du CV au format PDF.
             </p>
             <button 
               type="button" 
@@ -92,7 +93,7 @@ export default function Footer({ onOpenResume }) {
         {/* Bottom Bar */}
         <div className="footer-bottom-bar">
           <div className="footer-copyright">
-            © {new Date().getFullYear()} {personalInfo.name}. Tous droits réservés. Portfolio conçu avec React.js & Vite.
+            © {currentYear} {personalInfo.name} 
           </div>
 
           <button 

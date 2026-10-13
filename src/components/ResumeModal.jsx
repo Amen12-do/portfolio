@@ -1,17 +1,12 @@
 import { 
   X, 
   Printer, 
-  Download, 
   Mail, 
   Phone, 
-  MapPin, 
-  Calendar, 
-  CheckCircle2, 
-  Sparkles,
-  ExternalLink 
+  MapPin 
 } from 'lucide-react';
 import { LinkedinIcon } from './Icons';
-import { personalInfo, experiences, projects, education, certifications, skillsData, languages, volunteering } from '../data/cvData';
+import { personalInfo, experiences, projects, education, certifications, volunteering } from '../data/cvData';
 
 export default function ResumeModal({ onClose }) {
   const handlePrint = () => {

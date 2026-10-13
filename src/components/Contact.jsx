@@ -7,8 +7,7 @@ import {
   CheckCircle2, 
   Copy, 
   Check, 
-  MessageSquare, 
-  Sparkles,
+  Sparkles, 
   ArrowUpRight 
 } from 'lucide-react';
 import { LinkedinIcon } from './Icons';
@@ -18,7 +17,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: 'Opportunité Data / BI',
+    subject: 'Opportunité Data Analyst',
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
@@ -40,12 +39,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
-    
-    // Simulate sending message
     setSubmitted(true);
-    setTimeout(() => {
-      // In real scenario, user can also open mail client directly
-    }, 1000);
   };
 
   return (
@@ -53,14 +47,14 @@ export default function Contact() {
       <div className="section-container">
         <div className="section-header text-center">
           <div className="section-badge">
-            <Mail size={14} className="mr-1 text-cyan" />
-            <span>Discutons de vos besoins</span>
+            <Mail size={14} className="mr-1 text-yellow" />
+            <span>Coordonnées & Échanges</span>
           </div>
           <h2 className="section-title">
-            Entrons en <span className="gradient-text">Contact</span>
+            Entrons en <span className="gradient-text-yellow">Contact</span>
           </h2>
           <p className="section-subtitle">
-            Vous avez un projet décisionnel, un besoin de renfort en analyse de données ou une opportunité professionnelle ? Échangeons dès aujourd'hui.
+            Vous recherchez un Data Analyst avec une double compétence décisionnelle et développement pour renforcer votre équipe ? Échangeons dès aujourd'hui.
           </p>
         </div>
 
@@ -69,17 +63,17 @@ export default function Contact() {
           <div className="contact-info-col">
             <h3 className="contact-box-title">Coordonnées Directes</h3>
             <p className="contact-box-desc">
-              Disponible pour des opportunités en entreprise (CDI, missions) à Ariana, Grand Tunis ou en télétravail.
+              Disponible pour des opportunités professionnelles (CDI, missions) à Ariana, Grand Tunis ou en télétravail.
             </p>
 
             <div className="contact-cards-stack">
               {/* Email */}
               <div className="contact-info-card">
-                <div className="info-card-icon bg-cyan-subtle">
-                  <Mail size={20} className="text-cyan" />
+                <div className="info-card-icon bg-yellow-subtle">
+                  <Mail size={20} className="text-yellow" />
                 </div>
                 <div className="info-card-content">
-                  <span className="info-card-label">Email Professionnel</span>
+                  <span className="info-card-label">Email</span>
                   <a href={`mailto:${personalInfo.email}`} className="info-card-val">
                     {personalInfo.email}
                   </a>
@@ -96,11 +90,11 @@ export default function Contact() {
 
               {/* Phones */}
               <div className="contact-info-card">
-                <div className="info-card-icon bg-emerald-subtle">
-                  <Phone size={20} className="text-emerald" />
+                <div className="info-card-icon bg-yellow-subtle">
+                  <Phone size={20} className="text-yellow" />
                 </div>
                 <div className="info-card-content">
-                  <span className="info-card-label">Téléphone / WhatsApp</span>
+                  <span className="info-card-label">Téléphone</span>
                   <div className="info-phones-row">
                     <a href={`tel:${personalInfo.phones[0].replace(/\s+/g, '')}`} className="info-card-val">
                       {personalInfo.phones[0]}
@@ -123,8 +117,8 @@ export default function Contact() {
 
               {/* Location */}
               <div className="contact-info-card">
-                <div className="info-card-icon bg-purple-subtle">
-                  <MapPin size={20} className="text-accent" />
+                <div className="info-card-icon bg-yellow-subtle">
+                  <MapPin size={20} className="text-yellow" />
                 </div>
                 <div className="info-card-content">
                   <span className="info-card-label">Localisation</span>
@@ -134,8 +128,8 @@ export default function Contact() {
 
               {/* LinkedIn */}
               <div className="contact-info-card">
-                <div className="info-card-icon bg-blue-subtle">
-                  <LinkedinIcon size={20} className="text-blue" />
+                <div className="info-card-icon bg-yellow-subtle">
+                  <LinkedinIcon size={20} className="text-yellow" />
                 </div>
                 <div className="info-card-content">
                   <span className="info-card-label">Profil LinkedIn</span>
@@ -154,8 +148,8 @@ export default function Contact() {
 
             {/* Quick response banner */}
             <div className="quick-response-banner">
-              <Sparkles size={18} className="text-cyan shrink-0" />
-              <span>Réactivité garantie sous 24h par email ou téléphone.</span>
+              <Sparkles size={18} className="text-yellow shrink-0" />
+              <span>Réactivité garantie par email ou téléphone.</span>
             </div>
           </div>
 
@@ -167,7 +161,7 @@ export default function Contact() {
               {submitted ? (
                 <div className="form-success-box">
                   <div className="success-icon-wrap">
-                    <CheckCircle2 size={42} className="text-emerald" />
+                    <CheckCircle2 size={42} className="text-yellow" />
                   </div>
                   <h4 className="success-heading">Message bien préparé !</h4>
                   <p className="success-desc">
@@ -175,8 +169,8 @@ export default function Contact() {
                   </p>
                   <button 
                     type="button" 
-                    onClick={() => { setSubmitted(false); setFormData({ name: '', email: '', subject: 'Opportunité Data / BI', message: '' }); }}
-                    className="btn btn-outline btn-sm mt-3"
+                    onClick={() => { setSubmitted(false); setFormData({ name: '', email: '', subject: 'Opportunité Data Analyst', message: '' }); }}
+                    className="btn btn-primary btn-sm mt-3"
                   >
                     Envoyer un autre message
                   </button>
@@ -189,7 +183,7 @@ export default function Contact() {
                       type="text" 
                       id="name"
                       required
-                      placeholder="Ex. Sarah Ben Mansour"
+                      placeholder="Ex. Mohamed Ben Salah"
                       className="form-input"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -217,9 +211,9 @@ export default function Contact() {
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                     >
-                      <option value="Opportunité Data / BI">Opportunité d'Emploi (Data Analyst / BI)</option>
-                      <option value="Projet ETL & Tableaux de bord">Projet BI / Tableaux de bord Power BI</option>
-                      <option value="Développement Web & API">Développement Web / Backend Python</option>
+                      <option value="Opportunité Data Analyst">Opportunité d'Emploi (Data Analyst / BI)</option>
+                      <option value="Projet ETL & Tableaux de bord">Projet Business Intelligence / Power BI</option>
+                      <option value="Développement Web & Backend">Développement Web / Backend Python</option>
                       <option value="Autre demande">Autre échange / Prise de contact</option>
                     </select>
                   </div>
@@ -230,7 +224,7 @@ export default function Contact() {
                       id="message"
                       required
                       rows={5}
-                      placeholder="Bonjour Aymen, je vous contacte suite à votre profil concernant..."
+                      placeholder="Bonjour Aymen, je vous contacte au sujet de..."
                       className="form-input form-textarea"
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="1200" height="850">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1015"/>
+      <stop offset="50%" stop-color="#161722"/>
+      <stop offset="100%" stop-color="#0B0C10"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE500"/>
+      <stop offset="50%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(250, 204, 21, 0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="850" fill="url(#bgGrad)"/>
+  <rect width="1200" height="850" fill="url(#gridPattern)"/>
+
+  <!-- Golden Borders -->
+  <rect x="25" y="25" width="1150" height="800" fill="none" stroke="url(#goldGrad)" stroke-width="2" rx="16" opacity="0.6"/>
+  <rect x="40" y="40" width="1120" height="770" fill="none" stroke="rgba(250, 204, 21, 0.25)" stroke-width="1" rx="12"/>
+
+  <!-- Corner Ornaments -->
+  <path d="M 40 80 L 40 40 L 80 40" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+  <path d="M 1120 40 L 1160 40 L 1160 80" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+  <path d="M 40 770 L 40 810 L 80 810" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+  <path d="M 1120 810 L 1160 810 L 1160 770" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+
+  <!-- Ribbon on right side similar to Google Analytics -->
+  <g transform="translate(930, 0)">
+    <path d="M 0 0 L 110 0 L 110 520 L 55 460 L 0 520 Z" fill="url(#ribbonGrad)" opacity="0.95"/>
+    <circle cx="55" cy="200" r="65" fill="#0F1015" stroke="url(#goldGrad)" stroke-width="6"/>
+    <circle cx="55" cy="200" r="48" fill="url(#goldGrad)"/>
+    <circle cx="55" cy="200" r="38" fill="#0F1015"/>
+    <!-- Star icon -->
+    <path d="M 55 178 L 59 191 L 73 191 L 62 199 L 66 212 L 55 204 L 44 212 L 48 199 L 37 191 L 51 191 Z" fill="url(#goldGrad)"/>
+  </g>
+
+  <!-- Google Digital Garage Logo Header -->
+  <g transform="translate(90, 110)">
+    <!-- Google 4-color G -->
+    <text x="0" y="32" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="700" font-size="34" fill="#FFFFFF">
+      <tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan>
+      <tspan fill="#E5E7EB" font-weight="400" font-size="28"> Digital Garage</tspan>
+    </text>
+    <text x="0" y="70" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="600" font-size="16" fill="url(#goldGrad)" letter-spacing="3">
+      CERTIFICAT DE RÉUSSITE OFFICIEL
+    </text>
+  </g>
+
+  <!-- Course Title -->
+  <g transform="translate(90, 260)">
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="700" font-size="44" fill="#FFFFFF">
+      Les principes fondamentaux du
+    </text>
+    <text x="0" y="55" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="700" font-size="44" fill="url(#goldGrad)">
+      marketing numérique
+    </text>
+    <text x="0" y="100" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="400" font-size="20" fill="#9CA3AF">
+      The Fundamentals of Digital Marketing Certification
+    </text>
+  </g>
+
+  <!-- Recipient Name -->
+  <g transform="translate(90, 480)">
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="400" font-size="22" fill="#9CA3AF">
+      Décerné avec distinction à :
+    </text>
+    <text x="0" y="65" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="52" fill="#FFFFFF" letter-spacing="1">
+      Aymen Daaji
+    </text>
+    <text x="0" y="115" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="400" font-size="19" fill="#D1D5DB">
+      Pour avoir validé avec succès l'ensemble des modules d'évaluation et acquis
+    </text>
+    <text x="0" y="145" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="400" font-size="19" fill="#D1D5DB">
+      les compétences stratégiques en référencement, acquisition digitale et web analytics.
+    </text>
+  </g>
+
+  <!-- Footer Info / Credentials -->
+  <g transform="translate(90, 740)">
+    <line x1="0" y1="0" x2="800" y2="0" stroke="rgba(250, 204, 21, 0.2)" stroke-width="1"/>
+    <text x="0" y="32" font-family="'JetBrains Mono', monospace" font-size="14" fill="#9CA3AF">
+      Émetteur : Google Digital Garage &bull; Interactive Advertising Bureau Europe (IAB)
+    </text>
+    <text x="0" y="55" font-family="'JetBrains Mono', monospace" font-size="13" fill="url(#goldGrad)">
+      Statut : Certificat vérifié &bull; 26 modules / 40 heures d'apprentissage validés
+    </text>
+  </g>
+</svg>
+

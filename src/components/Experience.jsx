@@ -1,13 +1,11 @@
 import { 
   Briefcase, 
   Calendar, 
-  MapPin, 
   Building2, 
   CheckCircle2, 
   TrendingUp, 
   Layers, 
-  Code2, 
-  Sparkles 
+  Code2 
 } from 'lucide-react';
 import { experiences } from '../data/cvData';
 
@@ -30,14 +28,14 @@ export default function Experience() {
       <div className="section-container">
         <div className="section-header text-center">
           <div className="section-badge">
-            <Briefcase size={14} className="mr-1 text-cyan" />
+            <Briefcase size={14} className="mr-1 text-yellow" />
             <span>Parcours Professionnel</span>
           </div>
           <h2 className="section-title">
-            Expériences <span className="gradient-text">Professionnelles</span>
+            Expérience <span className="gradient-text">professionnelle</span>
           </h2>
           <p className="section-subtitle">
-            Un cheminement alliant stages spécialisés en BI/Backend, contrôle de gestion bancaire et développement web.
+            Missions concrètes en entreprise en Business Intelligence, contrôle de gestion bancaire et développement web.
           </p>
         </div>
 
@@ -64,25 +62,25 @@ export default function Experience() {
                       <span className="experience-badge">{exp.badge}</span>
                     </div>
                     <div className="timeline-period">
-                      <Calendar size={14} className="mr-1 text-cyan" />
+                      <Calendar size={14} className="mr-1 text-yellow" />
                       <span>{exp.period}</span>
                     </div>
                   </div>
 
                   <h3 className="timeline-role">{exp.role}</h3>
                   <div className="timeline-company">
-                    <Building2 size={16} className="text-accent" />
+                    <Building2 size={16} className="text-yellow" />
                     <span>{exp.company}</span>
                   </div>
 
                   <p className="timeline-desc">{exp.description}</p>
 
                   <div className="timeline-achievements">
-                    <h4 className="achievements-heading">Réalisations majeures :</h4>
+                    <h4 className="achievements-heading">Missions & Réalisations :</h4>
                     <ul className="achievements-list">
                       {exp.achievements.map((ach, aIdx) => (
                         <li key={aIdx} className="achievement-item">
-                          <CheckCircle2 size={16} className="achievement-icon text-emerald" />
+                          <CheckCircle2 size={16} className="achievement-icon text-yellow" />
                           <span>{ach}</span>
                         </li>
                       ))}
@@ -104,4 +102,3 @@ export default function Experience() {
     </section>
   );
 }
-

@@ -1,19 +1,13 @@
 import { useState } from 'react';
 import { 
-  BarChart3, 
-  Database, 
-  Code2, 
-  Sparkles, 
   ArrowRight, 
   FileDown, 
   Mail, 
   Phone, 
   MapPin, 
   Check, 
-  Copy,
-  TrendingDown,
-  LineChart,
-  Layers
+  Copy, 
+  Award
 } from 'lucide-react';
 import { LinkedinIcon } from './Icons';
 import { personalInfo } from '../data/cvData';
@@ -30,32 +24,31 @@ export default function Hero({ onOpenResume }) {
   return (
     <section id="hero" className="hero-section">
       <div className="hero-background-glow">
-        <div className="glow-sphere glow-1"></div>
-        <div className="glow-sphere glow-2"></div>
+        <div className="glow-sphere glow-yellow"></div>
+        <div className="glow-sphere glow-amber"></div>
       </div>
 
       <div className="section-container">
         {/* Status Badge */}
         <div className="hero-badge-wrapper">
           <div className="hero-badge">
-            <span className="pulsing-dot"></span>
-            <span>Diplômé Mastère Contrôle de Gestion & BI • En recherche active</span>
+            <span className="pulsing-dot-yellow"></span>
+            <span>Mastère Professionnel Contrôle de Gestion & Business Intelligence</span>
           </div>
         </div>
 
         {/* Hero Title & Subtitle */}
         <div className="hero-main-content">
           <h1 className="hero-title">
-            Bonjour, je suis <span className="gradient-text">{personalInfo.name}</span>
+            <span className="hero-greeting">Bonjour, je suis</span> <span className="gradient-text-yellow">{personalInfo.name}</span>
           </h1>
 
-          <p className="hero-role-title">
-            <span className="role-chip"><BarChart3 size={18} /> Data Analyst</span>
-            <span className="role-divider">•</span>
-            <span className="role-chip"><Layers size={18} /> Business Intelligence</span>
-            <span className="role-divider">•</span>
-            <span className="role-chip"><Code2 size={18} /> Python & Full-Stack</span>
-          </p>
+          <div className="hero-role-headline">
+            <span className="hero-main-role">{personalInfo.title}</span>
+            <span className="hero-sub-role">
+              Business Intelligence &bull; Contrôle de Gestion &bull; Développement Web & Backend
+            </span>
+          </div>
 
           <p className="hero-description">
             {personalInfo.summary}
@@ -64,7 +57,7 @@ export default function Hero({ onOpenResume }) {
           {/* Quick Contact & Location Badges */}
           <div className="hero-contact-bar">
             <div className="contact-pill">
-              <MapPin size={15} className="pill-icon text-cyan" />
+              <MapPin size={15} className="pill-icon text-yellow" />
               <span>{personalInfo.location}</span>
             </div>
 
@@ -72,9 +65,9 @@ export default function Hero({ onOpenResume }) {
               type="button" 
               onClick={handleCopyEmail} 
               className="contact-pill contact-pill-interactive"
-              title="Cliquer pour copier l'adresse email"
+              title="Cliquer pour copier l'email"
             >
-              <Mail size={15} className="pill-icon text-cyan" />
+              <Mail size={15} className="pill-icon text-yellow" />
               <span>{personalInfo.email}</span>
               {copiedEmail ? (
                 <span className="copied-tag"><Check size={13} /> Copié !</span>
@@ -86,9 +79,10 @@ export default function Hero({ onOpenResume }) {
             <a 
               href={`tel:${personalInfo.phones[0].replace(/\s+/g, '')}`} 
               className="contact-pill contact-pill-interactive"
+              title="Appeler"
             >
-              <Phone size={15} className="pill-icon text-emerald" />
-              <span>{personalInfo.phones[0]}</span>
+              <Phone size={15} className="pill-icon text-yellow" />
+              <span>{personalInfo.phones[0]} / {personalInfo.phones[1]}</span>
             </a>
 
             <a 
@@ -96,9 +90,10 @@ export default function Hero({ onOpenResume }) {
               target="_blank" 
               rel="noreferrer" 
               className="contact-pill contact-pill-interactive"
+              title="Ouvrir le profil LinkedIn"
             >
-              <LinkedinIcon size={15} className="pill-icon text-blue" />
-              <span>LinkedIn</span>
+              <LinkedinIcon size={15} className="pill-icon text-yellow" />
+              <span>linkedin.com/in/{personalInfo.linkedinUsername}</span>
             </a>
           </div>
 
@@ -109,9 +104,9 @@ export default function Hero({ onOpenResume }) {
               <ArrowRight size={18} />
             </a>
 
-            <a href="#bi-showcase" className="btn btn-secondary btn-lg">
-              <Sparkles size={18} className="text-accent" />
-              <span>Tester la démo BI</span>
+            <a href="#education" className="btn btn-secondary btn-lg">
+              <Award size={18} className="text-yellow" />
+              <span>Certifications avec images</span>
             </a>
 
             <button 
@@ -120,7 +115,7 @@ export default function Hero({ onOpenResume }) {
               className="btn btn-outline btn-lg"
             >
               <FileDown size={18} />
-              <span>Consulter mon CV</span>
+              <span>Consulter le CV</span>
             </button>
           </div>
         </div>
@@ -129,7 +124,7 @@ export default function Hero({ onOpenResume }) {
         <div className="hero-stats-grid">
           {personalInfo.stats.map((stat, idx) => (
             <div key={idx} className="stat-card">
-              <div className="stat-value gradient-text">{stat.value}</div>
+              <div className="stat-value gradient-text-yellow">{stat.value}</div>
               <div className="stat-label">{stat.label}</div>
               <div className="stat-desc">{stat.desc}</div>
             </div>

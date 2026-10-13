@@ -6,13 +6,7 @@ import {
   Sun, 
   Moon, 
   FileDown, 
-  Briefcase, 
-  FolderGit2, 
-  GraduationCap, 
-  Cpu, 
-  Mail, 
-  Sparkles,
-  ExternalLink
+  Sparkles
 } from 'lucide-react';
 import { personalInfo } from '../data/cvData';
 
@@ -25,7 +19,7 @@ export default function Navbar({ theme, toggleTheme, onOpenResume }) {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
 
-      const sections = ['about', 'bi-showcase', 'experience', 'projects', 'skills', 'education', 'contact'];
+      const sections = ['about', 'experience', 'projects', 'skills', 'education', 'contact'];
       const scrollPos = window.scrollY + 200;
 
       for (const section of sections) {
@@ -47,7 +41,6 @@ export default function Navbar({ theme, toggleTheme, onOpenResume }) {
 
   const navLinks = [
     { label: 'À propos', href: '#about', id: 'about' },
-    { label: 'Démo BI', href: '#bi-showcase', id: 'bi-showcase', highlight: true },
     { label: 'Expérience', href: '#experience', id: 'experience' },
     { label: 'Projets', href: '#projects', id: 'projects' },
     { label: 'Compétences', href: '#skills', id: 'skills' },
@@ -74,7 +67,7 @@ export default function Navbar({ theme, toggleTheme, onOpenResume }) {
           </div>
           <div className="brand-text-block">
             <span className="brand-name">{personalInfo.name}</span>
-            <span className="brand-role">Data & BI Specialist</span>
+            <span className="brand-role">{personalInfo.title}</span>
           </div>
         </a>
 
@@ -87,7 +80,7 @@ export default function Navbar({ theme, toggleTheme, onOpenResume }) {
               onClick={(e) => handleLinkClick(e, link.href)}
               className={`nav-link ${activeSection === link.id ? 'active' : ''} ${link.highlight ? 'highlight-pill' : ''}`}
             >
-              {link.highlight && <Sparkles size={13} className="mr-1" />}
+              {link.highlight && <Sparkles size={13} className="mr-1 text-yellow" />}
               {link.label}
             </a>
           ))}
@@ -137,7 +130,7 @@ export default function Navbar({ theme, toggleTheme, onOpenResume }) {
                 onClick={(e) => handleLinkClick(e, link.href)}
                 className={`mobile-nav-link ${activeSection === link.id ? 'active' : ''}`}
               >
-                {link.highlight && <Sparkles size={16} className="text-accent" />}
+                {link.highlight && <Sparkles size={16} className="text-yellow" />}
                 {link.label}
               </a>
             ))}

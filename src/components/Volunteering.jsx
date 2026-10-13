@@ -2,7 +2,6 @@ import {
   HeartHandshake, 
   Calendar, 
   Users, 
-  Sparkles, 
   Radio, 
   Target, 
   Gamepad2, 
@@ -31,14 +30,14 @@ export default function Volunteering() {
       <div className="section-container">
         <div className="section-header text-center">
           <div className="section-badge">
-            <HeartHandshake size={14} className="mr-1 text-emerald" />
-            <span>Vie Associative & Bénévolat</span>
+            <HeartHandshake size={14} className="mr-1 text-yellow" />
+            <span>Engagements Associatifs</span>
           </div>
           <h2 className="section-title">
-            Engagements <span className="gradient-text">Associatifs & Collectifs</span>
+            <span className="gradient-text">Bénévolat</span>
           </h2>
           <p className="section-subtitle">
-            Implication active au sein d'organisations étudiantes et d'initiatives tech, cultivant le leadership, la communication et l'esprit d'équipe.
+            Implication au sein d'organisations étudiantes, vulgarisation technologique et événementiel associatif.
           </p>
         </div>
 
@@ -48,11 +47,11 @@ export default function Volunteering() {
             return (
               <div key={idx} className="volunteer-card">
                 <div className="volunteer-card-top">
-                  <div className="volunteer-icon-box">
-                    <Icon size={20} className="text-cyan" />
+                  <div className="volunteer-icon-box bg-yellow-subtle">
+                    <Icon size={20} className="text-yellow" />
                   </div>
                   <span className="volunteer-year">
-                    <Calendar size={13} className="mr-1 text-cyan" />
+                    <Calendar size={13} className="mr-1 text-yellow" />
                     {item.year}
                   </span>
                 </div>
@@ -68,4 +67,3 @@ export default function Volunteering() {
     </section>
   );
 }
-

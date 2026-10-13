@@ -5,7 +5,6 @@ import {
   Code2, 
   CheckCircle2, 
   Brain, 
-  Target,
   Sparkles
 } from 'lucide-react';
 
@@ -14,26 +13,26 @@ export default function About() {
     {
       icon: BarChart,
       title: "Business Intelligence & Reporting",
-      desc: "Création de tableaux de bord Power BI dynamiques, modélisation dimensionnelle (schémas en étoile), calculs DAX avancés et storytelling décisionnel.",
-      highlights: ["Power BI & Power Query", "Mesures & KPIs DAX", "Modélisation de données", "Excel Financier"]
+      desc: "Conception de tableaux de bord Power BI dynamiques, modélisation dimensionnelle (schémas en étoile/flocon), calculs DAX et KPIs de pilotage décisionnel.",
+      highlights: ["Power BI & Power Query", "Mesures & KPIs DAX", "Modélisation dimensionnelle", "Excel Financier"]
     },
     {
       icon: Workflow,
       title: "Flux ETL & Ingénierie des Données",
-      desc: "Conception et automatisation de pipelines d'extraction, nettoyage et chargement (SSIS, Python Pandas, Dataflows) réduisant jusqu'à 40% les temps de traitement.",
-      highlights: ["SSIS & Power Query", "Python (Pandas, NumPy)", "Connecteurs personnalisés", "Optimisation flux"]
+      desc: "Conception et mise en place de pipelines d'extraction, nettoyage et chargement (SSIS, Python Pandas, Dataflows) réduisant jusqu'à 40% le temps de traitement des données.",
+      highlights: ["SSIS & Power Query", "Python (Pandas, NumPy)", "Connecteurs personnalisés", "Optimisation des flux"]
     },
     {
       icon: TrendingUp,
-      title: "Contrôle de Gestion & Stratégie",
-      desc: "Pilotage rigoureux de la performance d'entreprise à travers le suivi de 20+ KPIs, la production de rapports prévisionnels et l'analyse fine des écarts budgétaires.",
-      highlights: ["Suivi budgétaire", "Rapports prévisionnels", "Pilotage rentabilité", "Indicateurs bancaires"]
+      title: "Contrôle de Gestion & Finance",
+      desc: "Élaboration et suivi de 20+ KPIs mensuels et trimestriels, production de rapports financiers prévisionnels et analyse des écarts budgétaires pour orienter la décision.",
+      highlights: ["20+ KPIs de pilotage", "Rapports prévisionnels", "Analyse des écarts", "Optimisation budgétaire"]
     },
     {
       icon: Code2,
-      title: "Développement Web & APIs REST",
-      desc: "Développement d'applications modernes en React.js et de services backend (Node.js/Express, Python Flask) pour relier les systèmes opérationnels au décisionnel.",
-      highlights: ["React.js & JavaScript", "Python Flask API", "Node.js / Express", "MySQL / SQL Server"]
+      title: "Développement Web & Backend",
+      desc: "Développement d'applications interactives avec React.js, Node.js/Express et conception d'APIs REST avec Python Flask pour automatiser la collecte et l'intégration des données.",
+      highlights: ["React.js & JavaScript", "Python Flask API", "Node.js & Express.js", "SQL Server & MySQL"]
     }
   ];
 
@@ -42,48 +41,48 @@ export default function About() {
       <div className="section-container">
         <div className="section-header text-center">
           <div className="section-badge">
-            <Sparkles size={14} className="mr-1 text-accent" />
-            <span>Profil & Vision</span>
+            <Sparkles size={14} className="mr-1 text-yellow" />
+            <span>Double Compétence</span>
           </div>
           <h2 className="section-title">
-            La double compétence : <span className="gradient-text">Data & Développement</span>
+            Analyse de données & <span className="gradient-text-yellow">Développement</span>
           </h2>
           <p className="section-subtitle">
-            Une synergie unique entre vision managériale/financière et expertise technique pour transformer vos flux de données en leviers concrets de décision.
+            Une synergie stratégique entre contrôle de gestion, Business Intelligence et ingénierie logicielle pour transformer les données en leviers d'action.
           </p>
         </div>
 
         {/* Dual Competence Showcase Banner */}
         <div className="dual-competence-card">
           <div className="dual-competence-content">
-            <div className="badge-tag">Atout Distinctif</div>
+            <div className="badge-tag-yellow">Profil Hybride à Forte Valeur</div>
             <h3 className="dual-title">
-              Pourquoi cette double compétence fait la différence ?
+              La passerelle naturelle entre les besoins Métiers et l'Expertise Technique
             </h3>
             <p className="dual-text">
-              Beaucoup de développeurs ne maîtrisent pas la logique comptable ou financière, tandis que beaucoup d'analystes financiers manquent d'aisance avec l'écriture de code et l'automatisation technique. 
-              Grâce à ma formation en <strong>Contrôle de Gestion & BI</strong> combinée à mes compétences en <strong>Python, SQL et React.js</strong>, je comble ce fossé pour livrer des solutions analytiques prêtes à l'emploi, robustes et orientées résultats.
+              Diplômé d'un <strong>Mastère en Contrôle de Gestion et Business Intelligence</strong> à l'ESEN & ISCAE Manouba, j'associe la rigueur financière à la maîtrise du code (Python, SQL, React.js). 
+              Cette double compétence me permet de comprendre les enjeux stratégiques des décideurs et de concevoir en totale autonomie des architectures décisionnelles, des flux ETL performants et des tableaux de bord interactifs.
             </p>
             <div className="dual-points">
               <div className="point-item">
-                <CheckCircle2 size={18} className="text-emerald shrink-0" />
-                <span>Compréhension immédiate des enjeux métiers (rentabilité, marges, KPIs)</span>
+                <CheckCircle2 size={18} className="text-yellow shrink-0" />
+                <span>Compréhension immédiate des KPIs financiers, marges et pilotage budgétaire</span>
               </div>
               <div className="point-item">
-                <CheckCircle2 size={18} className="text-emerald shrink-0" />
-                <span>Autonomie technique complète pour automatiser la collecte et l'ETL</span>
+                <CheckCircle2 size={18} className="text-yellow shrink-0" />
+                <span>Autonomie technique complète : scripts Python, requêtes SQL complexes et pipelines ETL</span>
               </div>
               <div className="point-item">
-                <CheckCircle2 size={18} className="text-emerald shrink-0" />
-                <span>Capacité à développer des interfaces utilisateurs claires et interactives</span>
+                <CheckCircle2 size={18} className="text-yellow shrink-0" />
+                <span>Conception d'interfaces web réactives pour la restitution visuelle des données (React.js, Power BI)</span>
               </div>
             </div>
           </div>
           <div className="dual-competence-badge-col">
             <div className="floating-metric-box">
-              <Brain size={32} className="text-cyan mb-2" />
-              <div className="metric-num">100%</div>
-              <div className="metric-label">Aligné Métier & Tech</div>
+              <Brain size={32} className="text-yellow mb-2" />
+              <div className="metric-num text-yellow">100%</div>
+              <div className="metric-label">Métier & Technique</div>
             </div>
           </div>
         </div>
@@ -94,8 +93,8 @@ export default function About() {
             const Icon = pillar.icon;
             return (
               <div key={idx} className="pillar-card">
-                <div className="pillar-icon-box">
-                  <Icon size={24} />
+                <div className="pillar-icon-box bg-yellow-subtle">
+                  <Icon size={24} className="text-yellow" />
                 </div>
                 <h3 className="pillar-title">{pillar.title}</h3>
                 <p className="pillar-desc">{pillar.desc}</p>
@@ -112,4 +111,3 @@ export default function About() {
     </section>
   );
 }
-

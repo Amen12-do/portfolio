@@ -7,14 +7,11 @@ import {
   Workflow, 
   Clock, 
   CheckCircle2, 
-  AlertCircle, 
   Layers, 
-  PieChart,
   ArrowUpRight,
   ArrowDownRight,
   RefreshCw,
-  SlidersHorizontal,
-  FileSpreadsheet
+  SlidersHorizontal
 } from 'lucide-react';
 
 export default function BiShowcase() {
@@ -85,7 +82,7 @@ export default function BiShowcase() {
       <div className="section-container">
         <div className="section-header text-center">
           <div className="section-badge">
-            <Zap size={14} className="mr-1 text-cyan" />
+            <Zap size={14} className="mr-1 text-yellow" />
             <span>Démonstrateur Interactif</span>
           </div>
           <h2 className="section-title">
@@ -280,7 +277,7 @@ export default function BiShowcase() {
                 <div className="step-icon"><Zap size={20} /></div>
                 <h5 className="step-title">Cleanse & Transform</h5>
                 <p className="step-desc">Normalisation Pandas, vérification d'intégrité, déduplication</p>
-                <div className="step-status text-cyan">Traitement Vectorisé</div>
+                <div className="step-status text-yellow">Traitement Vectorisé</div>
               </div>
 
               <div className="pipeline-arrow">➔</div>
@@ -300,7 +297,7 @@ export default function BiShowcase() {
                 <div className="step-icon"><BarChart3 size={20} /></div>
                 <h5 className="step-title">Power BI Reporting</h5>
                 <p className="step-desc">Actualisation automatique des rapports et KPI décisionnels</p>
-                <div className="step-status text-cyan">Insights Directs</div>
+                <div className="step-status text-yellow">Insights Directs</div>
               </div>
             </div>
 

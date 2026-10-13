@@ -1,18 +1,18 @@
 export const personalInfo = {
   name: "Aymen Daaji",
-  title: "Data Analyst & Ingénieur Business Intelligence",
-  subtitle: "Double compétence : Analyse de données & Développement Web / Backend",
+  title: "Data Analyst",
+  subtitle: "Diplômé en Contrôle de Gestion & BI • Double compétence Analyse de Données & Développement",
   email: "aymandaaji@gmail.com",
-  phones: ["+216 92 730 383", "+216 50 346 890"],
+  phones: ["92 730 383", "50 346 890"],
   location: "Ariana, Tunisie",
   linkedin: "https://linkedin.com/in/ayman-daaji",
   linkedinUsername: "ayman-daaji",
   summary:
-    "Diplômé d'un Mastère en Contrôle de Gestion et Business Intelligence avec une double compétence en analyse de données et développement. Expérience confirmée en conception de solutions BI, mise en place de flux ETL et reporting financier. Capable de transformer des données complexes en insights actionnables pour optimiser la prise de décision stratégique.",
+    "Diplômé d'un Mastère en Contrôle de Gestion et Business Intelligence avec une double compétence en analyse de données et développement. Expérience confirmée en conception de solutions BI, mise en place de flux ETL et reporting financier. Capable de transformer des données complexes en insights actionnables pour optimiser la prise de décision.",
   stats: [
-    { label: "Réduction temps ETL", value: "-40%", desc: "Optimisation de pipelines de données chez Medianet" },
-    { label: "KPIs Financiers & Stratégiques", value: "20+", desc: "Pilotage mensuel et trimestriel à la BTE" },
-    { label: "Projets BI & Développement", value: "6+", desc: "Solutions d'intégration de données & applications web" },
+    { label: "Réduction temps ETL", value: "-40%", desc: "Optimisation des flux de données chez Medianet" },
+    { label: "KPIs pilotés", value: "20+", desc: "Suivi mensuel et trimestriel à la BTE" },
+    { label: "Double compétence", value: "BI + Dev", desc: "Data Analytics, Python, SQL & React.js" },
     { label: "Diplôme Spécialisé", value: "Bac+5", desc: "Mastère Pro Contrôle de Gestion & Business Intelligence" }
   ]
 };
@@ -22,156 +22,153 @@ export const experiences = [
     id: "medianet",
     role: "Stagiaire BI & Développement Backend",
     company: "Medianet",
-    period: "Février 2025 – Juin 2025",
-    type: "Stage de fin d'études / Spécialisation",
+    period: "février 2025 – juin 2025",
+    type: "Stage BI & Développement Backend",
     badge: "Business Intelligence & Backend",
     description:
-      "Conception et intégration d'une infrastructure décisionnelle complète couplée à des services backend pour automatiser la chaîne de valeur de la donnée.",
+      "Conception et mise en place d'une solution décisionnelle complète couplée à des services backend pour l'automatisation des flux analytiques.",
     achievements: [
-      "Intégration d’une solution BI de bout en bout pour le suivi et l’analyse des indicateurs clés d'activité.",
-      "Développement backend et intégration d'API REST pour la collecte automatisée et fiabilisée des flux de données.",
+      "Intégration d’une solution BI pour le suivi et l’analyse des données.",
+      "Développement backend et intégration d'API REST pour la collecte automatisée de données.",
       "Conception et mise en place de flux ETL optimisés, réduisant le temps de traitement des données de 40%."
     ],
-    technologies: ["Python", "API REST", "ETL", "SQL", "Business Intelligence", "Automatisation", "Optimisation flux"]
+    technologies: ["Python", "API REST", "ETL", "SQL", "Business Intelligence", "Power BI", "Optimisation de flux"]
   },
   {
     id: "bte",
     role: "Stagiaire Contrôle de Gestion",
     company: "Banque de Tunisie et des Emirats (BTE)",
-    period: "Juillet 2024 – Septembre 2024",
-    type: "Stage Professionnel",
-    badge: "Finance & Performance",
+    period: "juillet 2024 – septembre 2024",
+    type: "Stage Contrôle de Gestion",
+    badge: "Contrôle de Gestion Bancaire",
     description:
-      "Pilotage de la performance bancaire à travers la mise en place de tableaux de bord financiers et l'analyse prévisionnelle des écarts.",
+      "Pilotage de la performance bancaire à travers la mise en place de tableaux de bord financiers et l'analyse prévisionnelle des écarts budgétaires.",
     achievements: [
-      "Élaboration et suivi rigoureux de 20+ KPIs mensuels et trimestriels pour le pilotage de la performance opérationnelle et financière.",
-      "Production de rapports financiers exhaustifs et de projections prévisionnelles à destination des décideurs.",
-      "Analyse fine des écarts budgétaires mensuels et formulation de recommandations stratégiques pour l'optimisation des coûts."
+      "Élaboration et suivi de 20+ KPIs mensuels et trimestriels pour le pilotage de la performance.",
+      "Production de rapports financiers et prévisionnels.",
+      "Analyse des écarts mensuels et recommandations stratégiques pour l'optimisation budgétaire."
     ],
-    technologies: ["KPIs Financiers", "Contrôle de Gestion", "Reporting Prévisionnel", "Modélisation Financière", "Excel Avancé", "Analyse Budgétaire"]
+    technologies: ["KPIs financiers", "Contrôle de gestion", "Rapports prévisionnels", "Excel Avancé", "Analyse budgétaire"]
   },
   {
     id: "sadim-stage",
     role: "Stagiaire Développement Web",
     company: "SADIM industrielle",
-    period: "Mars 2023 – Juin 2023",
-    type: "Stage Développement",
-    badge: "Web & E-Commerce",
+    period: "mars 2023 – juin 2023",
+    type: "Stage Développement Web",
+    badge: "E-Commerce & Digitalisation",
     description:
-      "Modernisation de la présence digitale et digitalisation des canaux de vente pour un fabricant et distributeur de machines industrielles.",
+      "Digitalisation des canaux de vente pour un fabricant et distributeur d'équipements industriels.",
     achievements: [
-      "Conception et développement complet d'une plateforme e-commerce dédiée à la commercialisation de machines industrielles (React.js, Node.js).",
-      "Élaboration d'un plan marketing digital et refonte intégrale de l'identité visuelle de l'entreprise.",
-      "Mise en place d'un système de gestion de catalogue produits avec interface d'administration sécurisée et réactive."
+      "Conception et développement d'un site e-commerce pour la vente de machines industrielles (React.js, Node.js).",
+      "Élaboration d'un plan marketing digital et refonte complète de l'identité visuelle.",
+      "Mise en place d'un système de gestion de catalogue produits avec interface d'administration."
     ],
-    technologies: ["React.js", "Node.js", "Express.js", "E-commerce", "Catalogue Management", "UI/UX", "Marketing Digital"]
+    technologies: ["React.js", "Node.js", "Express.js", "Marketing digital", "Catalogue produits", "UI/UX"]
   }
 ];
 
 export const projects = [
   {
     id: "redmine-bi",
-    title: "Connecteur REDMINE Multi-Canaux & Solution BI",
-    date: "Juin 2025",
+    title: "Conception et déploiement d’un connecteur REDMINE avec multiples canaux et BI",
+    date: "juin 2025",
     category: "bi",
     categoryLabel: "Business Intelligence & ETL",
     highlight: "Projet Phare 2025",
     summary:
       "Architecture d'extraction, transformation et chargement (ETL) connectant Redmine à une solution décisionnelle Power BI via une API Flask personnalisée.",
     details: [
-      "Création d'un connecteur d’extraction principal haute performance développé avec Flask (Python).",
-      "Développement d’un connecteur ETL personnalisé assurant l'extraction, la transformation et le chargement régulier des données Redmine.",
-      "Conception d’un modèle de données dimensionnel optimisé pour les requêtes analytiques à fort volume.",
-      "Mise en place d’un schéma optimisé pour les opérations de jointure avec les référentiels de données Redmine.",
-      "Création de tableaux de bord Power BI dynamiques pour l'analyse des KPI’s de productivité et de gestion de tickets."
+      "Création d'un connecteur d’extraction principal avec Flask (python)",
+      "Développement d’un connecteur (ETL) personnalisé pour extraction, transformation, chargement des données de Redmine",
+      "Création d’un modèle de données optimisé pour l’analyse",
+      "Mise en place d’un schéma optimisé pour la jointure avec les données Redmine",
+      "Création de tableaux de bord et analyse des KPI’s"
     ],
-    technologies: ["Python", "Flask", "MySQL", "SSMS", "SSMA", "Power BI", "ETL"],
-    impact: "Centralisation des flux de données de projets et automatisation intégrale du reporting décisionnel."
+    technologies: ["Python", "Flask", "MYSQL", "SSMS", "SSMA", "Power BI"],
+    impact: "Centralisation des flux de données projets et automatisation intégrale du reporting décisionnel."
   },
   {
     id: "bi-finance",
-    title: "Dashboard BI & Pilotage Financier",
-    date: "Octobre 2024",
+    title: "Dashboard BI, Finance",
+    date: "octobre 2024",
     category: "bi",
     categoryLabel: "Business Intelligence & Finance",
     highlight: "Décisionnel Financier",
     summary:
-      "Conception d'un tableau de bord interactif de reporting financier pour le suivi en temps réel des marges, coûts et équilibres budgétaires.",
+      "Conception d’un tableau de bord interactif avec Power BI et Power Query pour le suivi financier et l'analyse d'indicateurs de rentabilité.",
     details: [
-      "Conception et architecture d’un tableau de bord interactif avec Power BI et Power Query.",
-      "Modélisation de données financières avec création de mesures DAX complexes (marges, variances, taux de réalisation).",
-      "Mise en place d’indicateurs financiers de synthèse et de visualisations analytiques pour faciliter la prise de décision rapide."
+      "Conception d’un tableau de bord interactif avec Power BI et Power Query.",
+      "Mise en place d’indicateurs financiers et analytiques.",
+      "Modélisation des données financières et calculs DAX pour le pilotage de la performance."
     ],
-    technologies: ["Power BI", "Power Query", "DAX", "MySQL", "SSMS", "Analyse Financière"],
-    impact: "Visibilité 360° sur la santé financière et identification immédiate des écarts par rapport aux prévisions."
+    technologies: ["MYSQL", "SSMS", "Power BI", "Power Query", "DAX"],
+    impact: "Visualisation synthétique des métriques financières et détection en temps réel des écarts budgétaires."
   },
   {
     id: "sadim-pfe",
-    title: "Digitalisation des Ventes SADIM (Projet de Fin d'Études)",
-    date: "Juin 2023",
+    title: "La digitalisation des ventes pour l'entreprise SADIM, Projet fin d'étude (PFE)",
+    date: "juin 2023",
     category: "dev",
-    categoryLabel: "Full-Stack & E-commerce",
+    categoryLabel: "Full-Stack & E-Commerce",
     highlight: "PFE Licence",
     summary:
-      "Projet de fin d'études axé sur la transformation digitale de SADIM Industrielle : plateforme web, refonte de marque et stratégie marketing.",
+      "Projet de fin d'études axé sur la transformation digitale de SADIM Industrielle : plateforme web e-commerce, plan marketing et refonte de l'identité visuelle.",
     details: [
-      "Création et déploiement d'une application web complète pour la présentation et vente d'équipements industriels.",
-      "Développement du frontend interactif en React.js et des services backend avec Node.js & Express.js.",
-      "Conception et mise en œuvre d'un plan marketing digital complet pour accroître la notoriété de la marque.",
-      "Renouvellement complet de la charte graphique et du logo de l'entreprise sur Adobe Illustrator."
+      "Création d'un site web",
+      "Réalisation d'un plan marketing",
+      "Renouvellement de logo",
+      "Mise en place de l'interface d'administration du catalogue produits"
     ],
-    technologies: ["React.js", "Node.js", "Express.js", "GitHub", "Adobe Illustrator", "CSS3"],
-    impact: "Augmentation de la portée commerciale et structuration numérique du catalogue de machines industrielles."
+    technologies: ["React.js", "Node.js", "Express.js", "GitHub", "Adobe Illustrator"],
+    impact: "Structuration numérique des ventes et modernisation de la charte de marque de SADIM."
   },
   {
     id: "quiz-platform",
-    title: "Plateforme Web Interactive de Quiz & Tests",
-    date: "Mai 2022",
+    title: "Test (projet fin d'année), site de test quiz",
+    date: "mai 2022",
     category: "dev",
     categoryLabel: "Développement Web",
     highlight: "Projet Académique",
     summary:
-      "Plateforme web interactive permettant la passation, le chronométrage et l'évaluation instantanée de questionnaires à choix multiples.",
+      "Développement d'une plateforme web interactive de passation de tests sous forme de quiz avec évaluation en temps réel.",
     details: [
-      "Développement d'une interface utilisateur dynamique pour les tests interactifs sous forme de quiz chronométrés.",
-      "Mise en œuvre du stockage relationnel des questions, catégories et scores des utilisateurs dans une base MySQL.",
-      "Traitement backend des réponses en temps réel avec calcul instantané des pourcentages de réussite."
+      "Développement d'une plateforme web de tests interactifs sous forme de quiz",
+      "Gestion de banques de questions dynamiques et chronométrage",
+      "Calcul instantané des résultats et restitution graphique des performances"
     ],
-    technologies: ["PHP", "HTML5", "CSS3", "JavaScript", "MySQL"],
-    impact: "Outil pédagogique intuitif déployé avec gestion centralisée des banques de questions."
+    technologies: ["PHP", "HTML", "CSS", "MYSQL"],
+    impact: "Plateforme pédagogique interactive avec gestion des questionnaires et des scores."
   }
 ];
 
 export const skillsData = {
   biData: [
-    { name: "Power BI (Modélisation, DAX, KPIs)", level: 92, category: "Reporting & Visualisation" },
-    { name: "Flux ETL (SSIS, Power Query, Dataflows)", level: 88, category: "ETL & Pipeline" },
-    { name: "Bases de données SQL Server (SSMS, SSMA)", level: 86, category: "Bases de données" },
-    { name: "MySQL / MySQL Workbench", level: 85, category: "Bases de données" },
-    { name: "PL/SQL & Requêtes avancées", level: 80, category: "Bases de données" },
-    { name: "Excel Avancé & Tableaux Croisés Dynamiques", level: 90, category: "Reporting Financier" }
+    { name: "ETL : SSIS, Power Query, Dataflows", level: 92, category: "ETL & Pipeline" },
+    { name: "SQL Server (SSMS, SSMA)", level: 90, category: "Bases de données" },
+    { name: "MySQL Workbenches, MySQL", level: 88, category: "Bases de données" },
+    { name: "PL/SQL", level: 82, category: "Bases de données" },
+    { name: "Power BI (modélisation, DAX, KPIs)", level: 94, category: "Reporting & Visualisation" },
+    { name: "Excel Avancé", level: 90, category: "Reporting Financier" }
   ],
   dev: [
-    { name: "Python (Pandas, NumPy, scripts)", level: 88, category: "Data Science & Scripting" },
-    { name: "Python Flask (API REST, Connecteurs ETL)", level: 84, category: "Backend" },
-    { name: "JavaScript (ES6+) / HTML5 / CSS3", level: 86, category: "Frontend" },
-    { name: "React.js", level: 82, category: "Frontend" },
-    { name: "Node.js & Express.js", level: 80, category: "Backend" },
-    { name: "PHP", level: 72, category: "Web" }
+    { name: "Python (Pandas, NumPy, Flask)", level: 90, category: "Data & Backend" },
+    { name: "JavaScript", level: 86, category: "Développement Scripting" },
+    { name: "React.js", level: 85, category: "Frontend Web" },
+    { name: "Node.js & Express.js", level: 82, category: "Backend" },
+    { name: "HTML & CSS", level: 92, category: "Intégration Web" }
   ],
   methodologies: [
-    { name: "Méthodologie Agile (Scrum)", level: 88, desc: "Sprints, rétrospectives, pilotage de backlog" },
-    { name: "Méthodologie GIMSI", level: 85, desc: "Conception et déploiement de systèmes décisionnels" },
-    { name: "Analyse & Modélisation des données", level: 90, desc: "Schémas en étoile/flocon, modélisation relationnelle" },
-    { name: "Automatisation & Optimisation des processus", level: 87, desc: "Réduction des temps de traitement, gains d'efficience" }
+    { name: "Agile (Scrum)", level: 90, desc: "Gestion itérative, sprints, standups et livraison continue" },
+    { name: "GIMSI", level: 85, desc: "Méthodologie de conception et pilotage de systèmes décisionnels" },
+    { name: "Analyse et modélisation des données", level: 92, desc: "Schémas en étoile, flocon, normalisation et modélisation dimensionnelle" },
+    { name: "Automatisation et optimisation des processus", level: 90, desc: "Réduction des goulots d'étranglement et gains de temps (ex: -40% ETL)" }
   ],
   tools: [
-    { name: "GitHub & Git", desc: "Gestion de version et collaboration d'équipe" },
-    { name: "SQL Server Management Studio (SSMS)", desc: "Administration et requêtage SQL Server" },
-    { name: "SSMA (SQL Server Migration Assistant)", desc: "Migration et conversion de bases de données" },
-    { name: "Android Studio", desc: "Environnement d'émulation et développement mobile" },
-    { name: "Adobe Illustrator", desc: "Création graphique vectorielle et chartes d'identité" },
-    { name: "Photoshop", desc: "Traitement d'images et maquettage visuel" }
+    { name: "GitHub", desc: "Contrôle de version, collaboration et gestion de code source" },
+    { name: "Android Studio", desc: "Environnement d'émulation et outils mobiles" },
+    { name: "Adobe Illustrator", desc: "Conception graphique vectorielle, logos et chartes graphiques" },
+    { name: "Photoshop", desc: "Retouche d'images et création visuelle" }
   ]
 };
 
@@ -181,93 +178,124 @@ export const education = [
     institution: "ESEN et ISCAE Manouba",
     period: "2023 – 2025",
     description:
-      "Formation d'excellence alliant gouvernance financière, contrôle de gestion stratégique et technologies décisionnelles avancées (Business Intelligence, modélisation de données, pilotage de la performance)."
+      "Formation d'excellence alliant contrôle de gestion stratégique, finance d'entreprise, modélisation décisionnelle et Business Intelligence avancée."
   },
   {
-    degree: "Licence en Business Computing",
-    institution: "École Supérieure d'Économie Numérique (ESEN)",
+    degree: "Licence en business computing",
+    institution: "École supérieur d'économie numérique (ESEN)",
     period: "2019 – 2023",
     description:
-      "Cursus combinant informatique appliquée, développement web/logiciel, bases de données relationnelles et systèmes d'information d'entreprise."
+      "Formation supérieure en technologies de l'information appliquées aux affaires : bases de données, développement logiciel et systèmes d'information."
   },
   {
-    degree: "Baccalauréat (Économie et Gestion)",
+    degree: "Baccalauréat (économie et gestion)",
     institution: "Lycée privé Asdrubal Bardo",
     period: "2019",
-    description: "Fondations en macroéconomie, gestion comptable, mathématiques appliquées et droit des affaires."
+    description: "Fondations solides en économie générale, gestion d'entreprise, comptabilité et mathématiques appliquées."
   }
 ];
 
 export const certifications = [
   {
+    id: "ga-beginners",
     title: "Google Analytics for Beginners",
-    issuer: "Google",
+    officialTitle: "Google Analytics for Beginners - Certificate of Completion",
+    issuer: "Google Analytics Academy",
+    recipient: "daaji ayman",
     tag: "Analytics & Tracking",
-    description: "Fondamentaux de la collecte, de la segmentation d'audience et de l'analyse du trafic web."
+    image: "/certificates/google-analytics-beginners.png",
+    validity: "Valide jusqu'au 18 mars 2025",
+    description: "Formation certifiante Google Analytics Academy sur la collecte de données, la création de vues et l'analyse de trafic web."
   },
   {
-    title: "Advanced Google Analytics",
-    issuer: "Google",
-    tag: "Data Strategy",
-    description: "Configuration avancée de dimensions/métriques personnalisées et suivi d'événements."
+    id: "intro-data-studio",
+    title: "Introduction to Data Studio",
+    officialTitle: "Introduction to Data Studio - Certificate of Completion",
+    issuer: "Google Analytics Academy",
+    recipient: "daaji ayman",
+    tag: "Visualisation & Reporting",
+    image: "/certificates/intro-data-studio.png",
+    validity: "Valide jusqu'au 16 mars 2025",
+    description: "Conception de rapports dynamiques, connexion aux sources de données et création de tableaux de bord interactifs sur Looker Studio."
   },
   {
-    title: "Google Analytics for Power Users",
-    issuer: "Google",
-    tag: "Performance Analysis",
-    description: "Analyse approfondie de tunnels de conversion et rapports personnalisés à forte valeur ajoutée."
-  },
-  {
-    title: "Introduction to Data Studio (Looker Studio)",
-    issuer: "Google",
-    tag: "Visualisation",
-    description: "Création de tableaux de bord interactifs et connexion à des sources de données multiples."
-  },
-  {
-    title: "Les principes fondamentaux du marketing numérique",
-    issuer: "Google Digital Garage",
-    tag: "Digital Marketing",
-    description: "Stratégie d'acquisition digitale, référencement naturel et pilotage de campagnes."
-  },
-  {
+    id: "quality-agility",
     title: "Quality Work with Agility",
-    issuer: "Certification Agile",
-    tag: "Agilité & Processus",
-    description: "Bonnes pratiques de travail itératif, amélioration continue et livraison de valeur orientée client."
+    officialTitle: "Delivering Quality Work with Agility",
+    issuer: "IBM (offert via Coursera)",
+    recipient: "Aymen Daaji",
+    tag: "Agilité & Méthodes",
+    image: "/certificates/quality-work-with-agility.png",
+    issueDate: "6 août 2026",
+    credentialId: "LC8RU4HXT2B2",
+    verifyUrl: "https://coursera.org/verify/LC8RU4HXT2B2",
+    description: "Certification IBM attestant des compétences en gestion agile de la qualité, amélioration continue et pilotage de livrables à haute valeur ajoutée."
+  },
+  {
+    id: "marketing-digital",
+    title: "Les principes fondamentaux du marketing numérique",
+    officialTitle: "The Fundamentals of Digital Marketing",
+    issuer: "Google Digital Garage",
+    recipient: "Aymen Daaji",
+    tag: "Marketing & Acquisition",
+    image: "/certificates/digital-marketing-fundamentals.svg",
+    validity: "Certificat Accrédité (26 modules / 40h)",
+    description: "Maîtrise des canaux d'acquisition, du référencement, de la stratégie digitale et de l'analyse d'audience pour optimiser la présence en ligne."
+  },
+  {
+    id: "ga-power-users",
+    title: "Google Analytics for Power Users",
+    officialTitle: "Google Analytics for Power Users - Certificate of Completion",
+    issuer: "Google Analytics Academy",
+    recipient: "daaji ayman",
+    tag: "Analytics Avancé",
+    image: "/certificates/google-analytics-power-users.png",
+    validity: "Valide jusqu'au 21 décembre 2025",
+    description: "Techniques avancées d'analyse de cohortes, tunnels de conversion, dimensions personnalisées et optimisation du ROI."
+  },
+  {
+    id: "ga-advanced",
+    title: "Advanced Google Analytics",
+    officialTitle: "Advanced Google Analytics - Certificate of Completion",
+    issuer: "Google Analytics Academy",
+    recipient: "daaji ayman",
+    tag: "Data Strategy & Tracking",
+    image: "/certificates/advanced-google-analytics.png",
+    validity: "Valide jusqu'au 29 décembre 2025",
+    description: "Collecte avancée, segmentation stratégique, protocoles de mesure et configuration fine des indicateurs analytiques."
   }
 ];
 
 export const languages = [
-  { name: "Arabe", level: "Courant / Maternelle", percentage: 100, flag: "🇹🇳" },
-  { name: "Français", level: "Avancé / Professionnel bilingue", percentage: 95, flag: "🇫🇷" },
-  { name: "Anglais", level: "Intermédiaire / Professionnel", percentage: 75, flag: "🇬🇧" },
+  { name: "Arabe", level: "Courant", percentage: 100, flag: "🇹🇳" },
+  { name: "Français", level: "Avancé", percentage: 92, flag: "🇫🇷" },
+  { name: "Anglais", level: "Intermédiaire", percentage: 75, flag: "🇬🇧" },
   { name: "Turc", level: "Débutant", percentage: 30, flag: "🇹🇷" }
 ];
 
 export const volunteering = [
   {
-    role: "Membre du département marketing",
+    role: "Membre de departement marketing",
     organization: "Enactus ESEN",
     year: "2022",
-    description: "Élaboration des plans de communication et promotion d'initiatives d'entrepreneuriat social universitaire."
+    description: "Participation active aux campagnes de communication et de promotion des projets d'entrepreneuriat social."
   },
   {
-    role: "Animateur d'émission Tecloud",
+    role: "Animateur d'emission Tecloud (sur page Facebook de club)",
     organization: "Team cloud ESCT",
     year: "2021",
-    description: "Animation d'émissions tech diffusées en direct sur la page Facebook du club pour vulgariser les technologies Cloud."
+    description: "Animation d'émissions en direct pour la sensibilisation et le partage de connaissances sur les technologies Cloud."
   },
   {
-    role: "Responsable sponsoring et logistique",
-    organization: "Hult Prize ESEN",
+    role: "Sponsoring et logistique",
+    organization: "Hult prize ESEN",
     year: "2020",
-    description: "Prospection de partenaires financiers, coordination logistique et gestion des intervenants de l'événement."
+    description: "Coordination des partenariats et gestion opérationnelle des événements de la compétition d'impact social."
   },
   {
     role: "Membre organisateur",
-    organization: "Indie Games Association - Global Game Jam 2020 (ISAMM)",
+    organization: "Indie Games Association Globale Game Jam 2020 (ISAMM)",
     year: "2020",
-    description: "Accueil des équipes de créateurs de jeux, modération d'ateliers et coordination opérationnelle du hackathon."
+    description: "Organisation et accompagnement des participants lors de l'événement mondial de création de jeux vidéo."
   }
 ];
-

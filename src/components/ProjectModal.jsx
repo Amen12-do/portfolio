@@ -1,13 +1,9 @@
 import { 
   X, 
   Calendar, 
-  Layers, 
   CheckCircle2, 
   Cpu, 
-  ExternalLink, 
-  FolderGit2, 
-  Sparkles,
-  ArrowRight
+  Sparkles
 } from 'lucide-react';
 
 export default function ProjectModal({ project, onClose }) {
@@ -26,12 +22,12 @@ export default function ProjectModal({ project, onClose }) {
         <div className="modal-header">
           <div className="modal-header-info">
             <div className="modal-category-badge">
-              <Sparkles size={14} className="text-accent" />
+              <Sparkles size={14} className="text-yellow" />
               <span>{project.categoryLabel}</span>
             </div>
             <h3 id="modal-title" className="modal-title">{project.title}</h3>
             <div className="modal-date">
-              <Calendar size={14} className="mr-1 text-cyan" />
+              <Calendar size={14} className="mr-1 text-yellow" />
               <span>Date de réalisation : {project.date}</span>
             </div>
           </div>
@@ -57,7 +53,7 @@ export default function ProjectModal({ project, onClose }) {
             <ul className="modal-details-list">
               {project.details.map((detail, idx) => (
                 <li key={idx} className="modal-detail-item">
-                  <CheckCircle2 size={16} className="text-emerald shrink-0 mt-0.5" />
+                  <CheckCircle2 size={16} className="text-yellow shrink-0 mt-0.5" />
                   <span>{detail}</span>
                 </li>
               ))}
@@ -69,7 +65,7 @@ export default function ProjectModal({ project, onClose }) {
             <div className="modal-tech-grid">
               {project.technologies.map((tech, idx) => (
                 <span key={idx} className="modal-tech-pill">
-                  <Cpu size={14} className="text-cyan" />
+                  <Cpu size={14} className="text-yellow" />
                   <span>{tech}</span>
                 </span>
               ))}

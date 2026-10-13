@@ -4,10 +4,7 @@ import {
   Workflow, 
   Wrench, 
   Database, 
-  Sparkles, 
   CheckCircle2, 
-  Palette, 
-  GitBranch, 
   Cpu 
 } from 'lucide-react';
 import { skillsData } from '../data/cvData';
@@ -18,14 +15,14 @@ export default function Skills() {
       <div className="section-container">
         <div className="section-header text-center">
           <div className="section-badge">
-            <Cpu size={14} className="mr-1 text-cyan" />
-            <span>Savoir-faire & Stack</span>
+            <Cpu size={14} className="mr-1 text-yellow" />
+            <span>Savoir-Faire & Outils</span>
           </div>
           <h2 className="section-title">
-            Compétences & <span className="gradient-text">Expertises Techniques</span>
+            <span className="gradient-text">Compétences</span>
           </h2>
           <p className="section-subtitle">
-            Un ensemble d'outils analytiques, décisionnels et de développement logiciel acquis en formation supérieure et en entreprise.
+            Double compétence en Business Intelligence, analyse de données et développement logiciel.
           </p>
         </div>
 
@@ -33,12 +30,12 @@ export default function Skills() {
           {/* 1. Business Intelligence & Data */}
           <div className="skill-category-card">
             <div className="category-header">
-              <div className="category-icon-box bg-blue-subtle">
-                <BarChart3 size={22} className="text-cyan" />
+              <div className="category-icon-box bg-yellow-subtle">
+                <BarChart3 size={22} className="text-yellow" />
               </div>
               <div>
                 <h3 className="category-title">Business Intelligence & Data</h3>
-                <p className="category-subtitle">ETL, Modélisation, DAX, SGBD</p>
+                <p className="category-subtitle">ETL, SGBD, DAX, Reporting & Visualisation</p>
               </div>
             </div>
 
@@ -51,7 +48,7 @@ export default function Skills() {
                   </div>
                   <div className="skill-meter-track">
                     <div 
-                      className="skill-meter-fill bg-gradient-cyan" 
+                      className="skill-meter-fill bg-gradient-yellow" 
                       style={{ width: `${item.level}%` }}
                     ></div>
                   </div>
@@ -60,20 +57,20 @@ export default function Skills() {
             </div>
 
             <div className="category-callout">
-              <Database size={16} className="text-cyan shrink-0" />
-              <span>Maîtrise complète de SQL Server (SSMS, SSMA), MySQL et requêtes PL/SQL avancées.</span>
+              <Database size={16} className="text-yellow shrink-0" />
+              <span>ETL : SSIS, Power Query, Dataflows • SQL Server (SSMS, SSMA), MySQL, PL/SQL.</span>
             </div>
           </div>
 
-          {/* 2. Développement & Scripts */}
+          {/* 2. Développement et scripts */}
           <div className="skill-category-card">
             <div className="category-header">
-              <div className="category-icon-box bg-purple-subtle">
-                <Code2 size={22} className="text-accent" />
+              <div className="category-icon-box bg-yellow-subtle">
+                <Code2 size={22} className="text-yellow" />
               </div>
               <div>
-                <h3 className="category-title">Développement & Scripts</h3>
-                <p className="category-subtitle">Python, JavaScript, React, Backend</p>
+                <h3 className="category-title">Développement et scripts</h3>
+                <p className="category-subtitle">Python, JavaScript, React.js, Node.js, Express.js</p>
               </div>
             </div>
 
@@ -86,7 +83,7 @@ export default function Skills() {
                   </div>
                   <div className="skill-meter-track">
                     <div 
-                      className="skill-meter-fill bg-gradient-purple" 
+                      className="skill-meter-fill bg-gradient-yellow" 
                       style={{ width: `${item.level}%` }}
                     ></div>
                   </div>
@@ -95,20 +92,20 @@ export default function Skills() {
             </div>
 
             <div className="category-callout">
-              <Code2 size={16} className="text-accent shrink-0" />
-              <span>Conception d'APIs Flask et d'applications modernes avec React.js et Node.js.</span>
+              <Code2 size={16} className="text-yellow shrink-0" />
+              <span>Python (Pandas, NumPy, Flask) • JavaScript, HTML, CSS, React.js, Node.js, Express.js.</span>
             </div>
           </div>
 
-          {/* 3. Méthodologies & Gestion de Projet */}
+          {/* 3. Méthodologies & Gestion de projets */}
           <div className="skill-category-card">
             <div className="category-header">
-              <div className="category-icon-box bg-emerald-subtle">
-                <Workflow size={22} className="text-emerald" />
+              <div className="category-icon-box bg-yellow-subtle">
+                <Workflow size={22} className="text-yellow" />
               </div>
               <div>
-                <h3 className="category-title">Méthodologies & Gestion</h3>
-                <p className="category-subtitle">Agile, GIMSI, Automatisation</p>
+                <h3 className="category-title">Méthodologies & Gestion de projets</h3>
+                <p className="category-subtitle">Agile (Scrum), GIMSI, Automatisation des processus</p>
               </div>
             </div>
 
@@ -116,7 +113,7 @@ export default function Skills() {
               {skillsData.methodologies.map((item, idx) => (
                 <div key={idx} className="methodology-item">
                   <div className="methodology-header">
-                    <CheckCircle2 size={18} className="text-emerald shrink-0" />
+                    <CheckCircle2 size={18} className="text-yellow shrink-0" />
                     <span className="methodology-name">{item.name}</span>
                   </div>
                   <p className="methodology-desc">{item.desc}</p>
@@ -128,12 +125,12 @@ export default function Skills() {
           {/* 4. Outils & Environnements */}
           <div className="skill-category-card">
             <div className="category-header">
-              <div className="category-icon-box bg-amber-subtle">
-                <Wrench size={22} className="text-amber" />
+              <div className="category-icon-box bg-yellow-subtle">
+                <Wrench size={22} className="text-yellow" />
               </div>
               <div>
                 <h3 className="category-title">Outils & Environnements</h3>
-                <p className="category-subtitle">DevOps, Migration, Graphisme</p>
+                <p className="category-subtitle">Versionning, Mobile & Création Visuelle</p>
               </div>
             </div>
 
@@ -151,4 +148,3 @@ export default function Skills() {
     </section>
   );
 }
-
